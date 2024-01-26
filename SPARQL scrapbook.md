@@ -39,6 +39,8 @@ where {
 # List of SPARQL endpoints
 | Service | Human Endpoint | API Endpoint |
 |---|---|---|
+| DBPedia | https://dbpedia.org/sparql | https://dbpedia.org/sparql |
 | MeSH | https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
-| Wikidata | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
 | Ronald Cornet | https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login needed, how?| 
+| Wikidata | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
+
