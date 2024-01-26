@@ -41,3 +41,4 @@ where {
 |---|---|
 | https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
 | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
+| https://ronaldcornet.nl/blazegraph/#query| - login needed, need to sort out | 
