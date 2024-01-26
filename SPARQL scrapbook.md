@@ -1,7 +1,7 @@
 # Various queries that help me to provide an overview, and to further expand my SPARQL skills
 
 ## Interestingly, you can perform queries on remote endpoints using SERVICE
-This works in Blazegraph:
+This works in my Blazegraph (can also simply query everything using ?s instead of me as entity):
 
 ```
 select * 
@@ -41,4 +41,4 @@ where {
 |---|---|
 | https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
 | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
-| https://ronaldcornet.nl/blazegraph/#query| - login needed, need to sort out | 
+| https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login needed, need to sort out how to do authentication | 
