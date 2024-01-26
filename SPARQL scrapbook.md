@@ -37,5 +37,6 @@ where {
 
 
 # List of SPARQL endpoints
-* https://id.nlm.nih.gov/mesh/sparql
-* https://query.wikidata.org/sparql
+| Human Endpoint | API Endpoint
+| https://id.nlm.nih.gov/mesh/sparql | https://id.nlm.nih.gov/mesh/query |
+| https://query.wikidata.org/ | https://query.wikidata.org/sparql |
