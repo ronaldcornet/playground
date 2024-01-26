@@ -13,6 +13,7 @@ where {
 }
 ```
 
+## This queries MeSH
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -35,13 +36,18 @@ where {
 }
 ```
 
+## Show all Graphs with the number of triples (doesn't work for Blazegraph, though)
+```
+SELECT  DISTINCT ?g (count(?s) as ?cs) WHERE  { GRAPH ?g {?s ?p ?c} } ORDER BY  Desc(?cs)
+```
+
 
 # List of SPARQL endpoints
 | Service | Human Endpoint | API Endpoint |
 |---|---|---|
 | DBPedia | https://dbpedia.org/sparql | https://dbpedia.org/sparql |
 | MeSH | https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
-| Ronald Cornet | https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login needed, how?| 
+| Ronald Cornet | https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login with Basic Auth header| 
 | Ronald Cornet | https://ronaldcornet.nl/virtuoso/ | https://ronaldcornet.nl/virtuoso/ |
 | Wikidata | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
 
