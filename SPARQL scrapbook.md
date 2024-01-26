@@ -14,11 +14,7 @@ where {
 ```
 
 ```
-select * 
-where {
-	SERVICE <[https://query.wikidata.org/sparql](https://id.nlm.nih.gov/mesh/sparql)>
-    {
-  		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -28,13 +24,15 @@ PREFIX mesh2024: <http://id.nlm.nih.gov/mesh/2024/>
 PREFIX mesh2023: <http://id.nlm.nih.gov/mesh/2023/>
 PREFIX mesh2022: <http://id.nlm.nih.gov/mesh/2022/>
 
-SELECT DISTINCT ?class
-FROM <http://id.nlm.nih.gov/mesh>
-WHERE { [] a ?class . }
-ORDER BY ?class
+select * 
+where {
+	SERVICE <https://id.nlm.nih.gov/mesh/sparql>
+    {
+      SELECT DISTINCT ?class
+      WHERE { [] a ?class . }
+      ORDER BY ?class
     }
 }
-
 ```
 
 
