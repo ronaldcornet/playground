@@ -37,8 +37,8 @@ where {
 
 
 # List of SPARQL endpoints
-| Human Endpoint | API Endpoint |
-|---|---|
-| https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
-| https://query.wikidata.org/ | https://query.wikidata.org/sparql |
-| https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login needed, how?| 
+| Service | Human Endpoint | API Endpoint |
+|---|---|---|
+| MeSH | https://id.nlm.nih.gov/mesh/query | https://id.nlm.nih.gov/mesh/sparql |
+| Wikidata | https://query.wikidata.org/ | https://query.wikidata.org/sparql |
+| Ronald Cornet | https://ronaldcornet.nl/blazegraph/#query| https://ronaldcornet.nl/blazegraph/sparql - login needed, how?| 
