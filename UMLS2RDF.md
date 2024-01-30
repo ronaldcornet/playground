@@ -1,0 +1,16 @@
+# UMLS
+MRREL.RRF contains Parent/Child  & Broader/Narrow relationships
+2023AB:
+|\#|type|
+|---|---|
+|629121|AQ|
+
+5231192 CHD
+5231192 PAR
+ 629121 QB
+1790195 RB
+  53182 RL
+1790195 RN
+17829794 RO
+3742256 RQ
+7121016 SY
