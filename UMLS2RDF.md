@@ -2,7 +2,7 @@
 MRREL.RRF contains Parent/Child  & Broader/Narrow relationships 
 2023AB:
 |\#|type|
-|---|---|
+|---:|---|
 |629,121|AQ|
 |5,231,192|CHD|
 |5,231,192|PAR|
