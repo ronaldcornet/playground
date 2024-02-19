@@ -36,6 +36,30 @@ where {
 }
 ```
 
+## Trying to understand how SNOMED CT is represented in GraphDB
+```
+# an example for Covid-19
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select * where {
+    <http://snomed.info/id/840539006> (owl:equivalentClass|rdfs:subClassOf|owl:intersectionOf|rdf:first)+ ?s1 .
+    ?s1 ?p ?o
+} 
+```
+Or (adding rdf:rest, only skos:prefLabel)
+```
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select * where {
+    <http://snomed.info/id/840539006> (owl:equivalentClass|rdfs:subClassOf|owl:intersectionOf|rdf:first|rdf:rest)* ?s1 .
+    ?s1 skos:prefLabel ?o
+} 
+```
+
+
 ## Show all Graphs with the number of triples (doesn't work for Blazegraph, though)
 ```
 SELECT  DISTINCT ?g (count(?s) as ?cs) WHERE  { GRAPH ?g {?s ?p ?c} } ORDER BY  Desc(?cs)
