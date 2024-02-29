@@ -67,6 +67,9 @@ SELECT  DISTINCT ?g (count(?s) as ?cs) WHERE  { GRAPH ?g {?s ?p ?c} } ORDER BY  
 
 
 # List of SPARQL endpoints
+
+Over 2500 SPARQL endpoints are monitored by [Yummy data](https://yummydata.org/)
+
 | Service | Human Endpoint | API Endpoint |
 |---|---|---|
 | DBPedia | https://dbpedia.org/sparql | https://dbpedia.org/sparql |
